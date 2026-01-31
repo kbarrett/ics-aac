@@ -28,7 +28,7 @@ h1 {
 }
 
 #popup {
-    visibility: collapse;
+    display: none;
     display: flex;
     padding-top: 5%; 
     padding-bottom: 5%;
