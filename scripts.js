@@ -1,6 +1,5 @@
 function closePopup(event)
 {
-    console.log("LASKHFLAKJ");
     document.getElementById("main").style.visibility = "visible";
     let popup = document.getElementById("popup");
     let popupFlags = popup.getElementsByClassName("flag");
@@ -11,6 +10,9 @@ function closePopup(event)
 }
 
 function popup(event) {
+    if (document.getElementById("main").style.visibility === "collapse") {
+        return;
+    }
     document.getElementById("main").style.visibility = "collapse";
     let popup = document.getElementById("popup");
     popup.appendChild(event.currentTarget.cloneNode(true));
