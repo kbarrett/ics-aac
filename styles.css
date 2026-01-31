@@ -27,6 +27,15 @@ h1 {
     margin: 0px;
 }
 
+#popup {
+    visibility: collapse;
+    display: flex;
+    padding-top: 5%; 
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -67,8 +76,4 @@ h1 {
     padding-bottom: 2px;
     padding-left: 2px;
     padding-right: 2px;
-}
-
-#popup {
-    visibility: collapse;
 }
