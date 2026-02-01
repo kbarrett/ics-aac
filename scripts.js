@@ -37,18 +37,18 @@ function loadFlag() {
     if (flagHTML == null) {
         return;
     }
-    document.getElementById('flag').innerHTML += flagHTML;
+    document.getElementById("flag").innerHTML += flagHTML;
 
-    const iconLink = document.createElement('link');
-    iconLink.rel = 'icon';
+    const iconLink = document.createElement("link");
+    iconLink.rel = "icon";
     iconLink.href = "./images/ICS_" + id + ".svg";
     document.head.appendChild(iconLink);
 }
 
 function openFlag(event) {
-    window.location = './flag.html?id=' + event.currentTarget.id;
+    window.location = "./flag.html?id=" + event.currentTarget.id;
 }
 
 function closeFlag(event) {
-    window.location = './index.html';
+    window.location = "./index.html";
 }
