@@ -53,6 +53,7 @@ img {
 
 .ics-row .flag {
     padding: 2px;
+    max-width: 25%;
 }
 
 .flag {
