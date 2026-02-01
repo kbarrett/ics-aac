@@ -1,8 +1,8 @@
 :root {
-    --background-colour: #fff;
-    --header-colour: #000;
-    --dark-font-colour: #000;
-    --light-font-colour: #fff;
+    --background-colour: #FFF;
+    --header-colour: #1F363D;
+    --dark-font-colour: #070C0E;
+    --light-font-colour: #FFF;
 }
 
 html {
