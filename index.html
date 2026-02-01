@@ -8,73 +8,29 @@
     <script src="./scripts.js"></script>
 </head>
 
-<body>
-    <div id="popup" onclick="closePopup(event)">
-        <p>X</p>
+<body onload="loadAllFlags()">
+    <div class="header">
+        <h1>ICS AAC</h1>
     </div>
-    <div id="main">
-        <div class="header">
-            <h1>ICS AAC</h1>
+    <div class="ics-table">
+        <div class="ics-row help">
+            <div id="Charlie" class="flag" onclick="openFlag(event)"></div>
+            <div id="November" class="flag" onclick="openFlag(event)"></div>
+            <div id="Victor" class="flag" onclick="openFlag(event)"></div>
+            <div id="Whiskey" class="flag" onclick="openFlag(event)"></div>
         </div>
-        <div class="ics-table">
-            <div class="ics-row help">
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Charlie.svg" alt="Charlie" />
-                    <p>Affirmative</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_November.svg" alt="November" />
-                    <p>Negative</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Victor.svg" alt="Victor" />
-                    <p>I require assistance</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Whiskey.svg" alt="Whiskey" />
-                    <p>I require medical assistance</p>
-                </div>
-            </div>
-            <div class="ics-row requests">
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Foxtrot.svg" alt="Foxtrot" />
-                    <p>I am disabled; communicate with me</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Golf.svg" alt="Golf" />
-                    <p>I require a pilot</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Kilo.svg" alt="Kilo" />
-                    <p>I wish to communicate with you</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Zulu.svg" alt="Zulu" />
-                    <p>I require a tug</p>
-                </div>
-            </div>
-            <div class="ics-row information">
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Delta.svg" alt="Delta" />
-                    <p>Keep clear of me; I am maneuvering with difficulty</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Hotel.svg" alt="Hotel" />
-                    <p>I have a pilot on board</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Mike.svg" alt="Mike" />
-                    <p>My vessel is stopped and making no way through the water</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Uniform.svg" alt="Uniform" />
-                    <p>You are running into danger</p>
-                </div>
-                <div class="flag" onclick="popup(event)">
-                    <img src="./images/ICS_Yankee.svg" alt="Yankee" />
-                    <p>I am dragging my anchor</p>
-                </div>
-            </div>
+        <div class="ics-row requests">
+            <div id="Foxtrot" class="flag" onclick="openFlag(event)"></div>
+            <div id="Golf" class="flag" onclick="openFlag(event)"></div>
+            <div id="Kilo" class="flag" onclick="openFlag(event)"></div>
+            <div id="Zulu" class="flag" onclick="openFlag(event)"></div>
+        </div>
+        <div class="ics-row information">
+            <div id="Delta" class="flag" onclick="openFlag(event)"></div>
+            <div id="Hotel" class="flag" onclick="openFlag(event)"></div>
+            <div id="Mike" class="flag" onclick="openFlag(event)"></div>
+            <div id="Uniform" class="flag" onclick="openFlag(event)"></div>
+            <div id="Yankee" class="flag" onclick="openFlag(event)"></div>
         </div>
     </div>
 </body>

@@ -1,20 +1,49 @@
-function closePopup(event)
-{
-    document.getElementById("main").style.display = "block";
-    let popup = document.getElementById("popup");
-    let popupFlags = popup.getElementsByClassName("flag");
-    for (const popupFlag of popupFlags) {
-        popup.removeChild(popupFlag);
-    }
-    popup.style.display = "none";
+var flags = {
+    "Charlie": "Affirmative",
+    "Delta": "Keep clear of me; I am maneuvering with difficulty",
+    "Foxtrot": "I am disabled; communicate with me",
+    "Golf": "I require a pilot",
+    "Hotel": "I have a pilot on board",
+    "Kilo": "I wish to communicate with you",
+    "Mike": "My vessel is stopped and making no way through the water",
+    "November": "Negative",
+    "Uniform": "You are running into danger",
+    "Victor": "I require assistance",
+    "Whiskey": "I require medical assistance",
+    "Yankee": "I am dragging my anchor",
+    "Zulu": "I require a tug"
 }
 
-function popup(event) {
-    if (document.getElementById("main").style.display === "none") {
+function getFlagHTML(id) {
+    const flagDescription = flags[id];
+    if (flagDescription == null) {
         return;
     }
-    document.getElementById("main").style.display = "none";
-    let popup = document.getElementById("popup");
-    popup.appendChild(event.currentTarget.cloneNode(true));
-    popup.style.display = "flex";
+    return "<img src=\"./images/ICS_" + id + ".svg\" alt=\"" + id + "\" />"
+      + "<p>" + flagDescription + "</p>";
+}
+
+function loadAllFlags()
+{
+    let flags = window.document.getElementsByClassName("flag");
+    for (const flag of flags) {
+        flag.innerHTML += getFlagHTML(flag.id);
+    }
+}
+
+function loadFlag() {
+    const id = new URL(window.location.href).searchParams.get("id");
+    const flagHTML = getFlagHTML(id);
+    if (flagHTML == null) {
+        return;
+    }
+    document.getElementById('flag').innerHTML += flagHTML;
+}
+
+function openFlag(event) {
+    window.location = './flag.html?id=' + event.currentTarget.id;
+}
+
+function closeFlag(event) {
+    window.location = './index.html';
 }
