@@ -46,6 +46,8 @@ function loadFlag() {
     iconLink.rel = "icon";
     iconLink.href = "./images/ICS_" + id + ".svg";
     document.head.appendChild(iconLink);
+
+    document.title += " - " + id;
 }
 
 function openFlag(event) {
