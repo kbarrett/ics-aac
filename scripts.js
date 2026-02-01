@@ -25,7 +25,7 @@ function getFlagHTML(id) {
 
 function loadAllFlags()
 {
-    let flags = window.document.getElementsByClassName("flag");
+    const flags = window.document.getElementsByClassName("flag");
     for (const flag of flags) {
         flag.innerHTML += getFlagHTML(flag.id);
     }
@@ -38,6 +38,11 @@ function loadFlag() {
         return;
     }
     document.getElementById('flag').innerHTML += flagHTML;
+
+    const iconLink = document.createElement('link');
+    iconLink.rel = 'icon';
+    iconLink.href = "./images/ICS_" + id + ".svg";
+    document.head.appendChild(iconLink);
 }
 
 function openFlag(event) {
