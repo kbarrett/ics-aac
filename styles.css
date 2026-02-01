@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    height: 100%;
     background-color: var(--background-colour);
     color: var(--dark-font-colour);
     margin: auto;
@@ -71,4 +70,8 @@ h1 {
     justify-content: center;
     background-color: var(--header-colour);
     color: var(--light-font-colour);
+}
+
+.oneFlag img {
+    max-height: 90vh;
 }
