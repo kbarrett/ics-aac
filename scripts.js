@@ -4,12 +4,15 @@ var flags = {
     "Foxtrot": "I am disabled; communicate with me",
     "Golf": "I require a pilot",
     "Hotel": "I have a pilot on board",
+    "Juliet": "I am on fire and have dangerous cargo on board: keep well clear of me",
     "Kilo": "I wish to communicate with you",
     "Mike": "My vessel is stopped and making no way through the water",
     "November": "Negative",
+    "Papa": "All persons should report on board as the vessel is about to proceed to sea",
     "Uniform": "You are running into danger",
     "Victor": "I require assistance",
     "Whiskey": "I require medical assistance",
+    "X-ray": "Stop carrying out your intentions and watch for my signals",
     "Yankee": "I am dragging my anchor",
     "Zulu": "I require a tug"
 }
