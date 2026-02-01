@@ -10,15 +10,25 @@ body {
     color: var(--dark-font-colour);
     margin: auto;
     font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: 16px;
+    font-size: 0.8em;
     line-height: 1.4;
 }
 
 h1 {
-    font-size: 85px;
+    font-size: 5.8em;
     font-weight: 100;
     line-height: 1;
     margin: 0px;
+    text-align: center;
+}
+
+@media screen and (width >= 900px) {
+    body {
+        font-size: 1.4em;
+    }
+    h1 {
+        font-size: 8em;
+    }
 }
 
 img {
