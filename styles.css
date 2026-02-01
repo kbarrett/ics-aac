@@ -11,7 +11,6 @@ html {
 
 body {
     height: 100%;
-    width: 100%;
     background-color: var(--background-colour);
     color: var(--dark-font-colour);
     margin: auto;
@@ -25,15 +24,6 @@ h1 {
     font-weight: 100;
     line-height: 1;
     margin: 0px;
-}
-
-#popup {
-    display: none;
-    display: flex;
-    padding-top: 5%; 
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .header {
@@ -61,19 +51,24 @@ h1 {
     width: 100%;
 }
 
+.ics-row .flag {
+    padding: 2px;
+}
+
 .flag img {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .flag {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    width: 100%;
-    padding-top: 2px; 
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+}
+
+.oneFlag {
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--header-colour);
+    color: var(--light-font-colour);
 }
